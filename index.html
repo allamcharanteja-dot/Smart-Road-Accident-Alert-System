@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Road Accident Alert System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<h1>🚦 Smart Road Accident Alert System</h1>
+<p>
+An intelligent system designed to analyze accident severity 
+based on speed, weather conditions, and impact level to generate emergency alerts.
+</p>
+</header>
+
+<div class="form-section">
+<input type="text" id="location" placeholder="Accident Location">
+<input type="number" id="speed" placeholder="Vehicle Speed (km/h)">
+
+<select id="weather">
+<option value="">Select Weather Condition</option>
+<option value="Clear">Clear</option>
+<option value="Rainy">Rainy</option>
+<option value="Foggy">Foggy</option>
+<option value="Stormy">Stormy</option>
+</select>
+
+<select id="impact">
+<option value="">Impact Level</option>
+<option value="Low">Low</option>
+<option value="Medium">Medium</option>
+<option value="High">High</option>
+</select>
+
+<button onclick="analyzeAccident()">Analyze Accident</button>
+</div>
+
+<div class="dashboard">
+
+<div class="card">
+<h2>Location</h2>
+<div class="value" id="displayLocation">--</div>
+</div>
+
+<div class="card">
+<h2>Vehicle Speed</h2>
+<div class="value" id="displaySpeed">-- km/h</div>
+</div>
+
+<div class="card">
+<h2>Weather Condition</h2>
+<div class="value" id="displayWeather">--</div>
+</div>
+
+<div class="card">
+<h2>Impact Level</h2>
+<div class="value" id="displayImpact">--</div>
+</div>
+
+<div class="card">
+<h2>Emergency Alert</h2>
+<div id="alertBox" class="alert">--</div>
+</div>
+
+</div>
+
+<footer>
+© 2026 Smart Road Accident Alert System | Academic Project
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
